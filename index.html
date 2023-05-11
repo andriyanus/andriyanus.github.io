@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Moqups</div>
+        <div class="nav">
+            <div class="nav-item"><a href="#home">Home</a></div>
+            <div class="nav-item nav-center"><a href="#our-package">Our Package</a></div>
+            <div class="nav-item"><a href="#call-us">Call Us</a></div>
+
+        </div>
+    </header>
+    <main class="main">
+        <section id="home">
+            <div class="banner">
+                <h1>Top Rated E Groceries Shop in <br>Indonesia</h1>
+                <h4>Every Day With best ingredients</h4>
+            </div>
+        </section>
+        <section class="main-form">
+            <div class="element left">
+                <div class="awal">
+                    <img src="images/no pict.jpg" alt="familymart">
+                </div>
+                <div class="label">"Setiap hari beli sayur buah yang fresh disini</div>
+                <br>
+                <span class="konten">
+                    <i class="material-icons" style="float: left;margin-top: 14px;color: white;margin-right: 14px;">person</i>
+                    <p><b>Florence Hughes</b> <br>Ibu Rumah Tangga, 28 </p>
+                    <hr>
+                    <h3>Use this space to provide users with more information <br> about your offer. Consider it a follow-up to your headline <br> and explain the benefits of your services or product.</h3>
+                    <div style="width: 100%;">
+                        <div class="circle" style="float:left;margin-top: 10px;margin-right: 14px;">1</div>
+                        <p>Your first feature, written in the form of a <br> benefit statement.</p>
+                    </div><br />
+                    <div style="width: 100%;">
+                        <div class="circle" style="float:left;margin-top: 10px;margin-right: 14px;">2</div>
+                        <p>Your second feature, written in the form <br> of a benefit statement.</p>
+                    </div><br />
+                    <div style="width: 100%;">
+                        <div class="circle" style="float:left;margin-top: 10px;margin-right: 14px;">3</div>
+                        <p>Your third feature, written in the form of <br> a benefit statement.</p>
+                    </div><br />
+                    <!-- <div style="width: 100%;">
+                        <div class="circle">2</div>
+                    </div><br />
+                    <div style="width: 100%;">
+                        <div class="circle">3</div>
+                    </div><br /> -->
+                </span>
+            </div>
+            <div class="element right">
+                <div class="form">
+                    <h3>Contac Us</h3>
+                    <p>Sales akan menghubungi anda 1x24 <br> jam setelah data kami terima.</p>
+                    <form class="message-form" name="message-form" onsubmit="return validateForm()">
+                        Nama: <input id="name" placeholder="Nama" type="text" name="full-name" />
+                        <br />
+                        Email Address: <input id="email" placeholder="Email" type="text" name="email" />
+                        <br />
+                        Phone: <input id="phone" placeholder="Nomor telepon" type="text" name="phone" />
+                        <br />
+                        Message: <input placeholder="Pesan" type="text" name="messages" />
+                        <br />
+                        <input type="submit" value="Submit"/>
+                    </form>
+                     <div class="form-output">
+                        <p>Nama : <span id="sender-full-name"></span></p>
+                        <p>Tanggal Lahir : <span id="sender-email"></span></p>
+                        <p>Jenis Kelamin : <span id="sender-phone"></span></p>
+                        <p>Pesan : <span id="sender-messages"></span></p>
+        
+        
+                    </div>
+                        
+                    <!-- <label>Your Name:</label>
+                    <input id="name" name="name" class="input" required>
+                    <label>Email Address:</label>
+                    <input id="email" name="email" class="input" required>
+                    <label>Phone Number:</label>
+                    <input id="phone" name="phone" class="input" required>
+                    <label>Message:</label>
+                    <input id="message" name="message" class="input" required>
+                    <button class="btn">SEND</button> -->
+                </div>
+                
+            </div>
+
+        </section>
+<!-- OUR PACKAGE -->
+        <section id="our-package">
+            <div class="banner">
+                <h1>Our Package</h1>
+                
+            </div>
+        </section>
+        <section class="main-form">
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <i class="material-icons" style="float: left;margin-top: 17px;color: white;margin-right: 14px; margin-bottom: 40px;">lock</i>
+                        <p><b>Fresh Vegetable</b> <br>Sayuran segar langsung dari <br> sumber pertanian terbaik </p>
+                    </td>
+                    <td>
+                        <i class="material-icons" style="float: left;margin-top: 17px;color: white;margin-right: 14px; margin-bottom: 40px;">lock</i>
+                        <p><b>Fresh Fruit</b> <br>Buah dengan kulaitas terbaik <br> dari local atau import dan <br> harga yang menarik </p>
+                    </td>
+                    <td>
+                        <i class="material-icons" style="float: left;margin-top: 14px;color: white;margin-right: 14px; margin-bottom: 40px">lock</i>
+                        <p><b>Florence Hughes</b> <br>Dikirim instan oleh kurir <br> yang telah di training <br> dengan SOP untuk menjaga <br> kondisi belanja kamu </p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <section class="main-form">
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <i class="material-icons" style="float: left;margin-top: 17px;color: white;margin-right: 14px; margin-bottom: 40px;">stars</i>
+                        <p><b>Fresh Vegetable</b> <br>Sayuran segar langsung dari <br> sumber pertanian terbaik </p>
+                    </td>
+                    <td>
+                        <i class="material-icons" style="float: left;margin-top: 17px;color: white;margin-right: 14px; margin-bottom: 40px;">stars</i>
+                        <p><b>Fresh Fruit</b> <br>Buah dengan kulaitas terbaik <br> dari local atau import dan <br> harga yang menarik </p>
+                    </td>
+                    <td>
+                        <i class="material-icons" style="float: left;margin-top: 14px;color: white;margin-right: 14px; margin-bottom: 40px">stars</i>
+                        <p><b>Florence Hughes</b> <br>Dikirim instan oleh kurir <br> yang telah di training <br> dengan SOP untuk menjaga <br> kondisi belanja kamu </p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="call-us">
+            <div class="end">
+                <h1>Your Closing Argument Headline </h1>
+                <h3>Suspendisse egestas rhoncus urna in bibedum. Donec urna neque, euismod sed <br> justo quis, convallis tincidunt risus. Ohasellus fringilla odio vel erat ringilla.</h3>
+                <button class="btn-call">CALL TO ACTION</button>
+            </div>
+        </section>
+        <section class="main-form">
+            <div class="footer">
+                <span class="mock"> <b>Moqups</b></span>
+                <span class="bottom">Terms of Service  Privacy Policy <br> C 2019 Moqups</span>
+            </div>
+        </section>
+        
+    </main>
+</body>
+
+<script src="js/index.js"></script>
+
+</html>
