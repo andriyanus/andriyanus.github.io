@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba Form</title>
+
+</head>
+<body>
+
+    <main class="main-content">
+        <h3>Hi <span id="nama"></span>, Welcome to Website</h3>
+
+
+        <!-- <script>
+            var name = prompt("Masukkan nama mu");
+            var element = document.getElementById("nama").innerText = name;
+            
+        </script> -->
+
+        <div class="form-section">
+            <form class="message-form" name="message-form" onsubmit="return validateForm()">
+                Nama: <input placeholder="Nama" type="text" name="full-name" />
+                <br />
+
+                Tanggal Lahir:
+                <input type="date" name="birth-date" />
+                <br />
+
+                Jenis Kelamin:
+                <input type="radio" id="male" name="gender" value="male"/>
+                <label for="male">Laki-Laki</label>
+                <input type="radio" id="female" name="gender" value="male"/>
+                <label for="male">Perempuan</label>
+                <br />
+
+                Pesan:
+                <textarea placeholder="Pesan" name="messages" ></textarea>
+                <br />
+
+                <input type="submit" value="Submit"/>
+            </form>
+            <script>
+                function validateForm() {
+                var name = document.forms["message-form"]["full-name"].value;
+                var date = document.forms["message-form"]["birth-date"].value;
+                var gender = document.forms["message-form"]["gender"].value;
+                var messages = document.forms["message-form"]["messages"].value;
+
+                if (name == ""|| date == "" || gender == "" || messages == "") {
+                    alert("Tidak boleh ada yang kosong");
+                    return false;
+                }
+
+                setSenderUI(name, date, gender, messages);
+
+                return false;
+            }
+
+            function setSenderUI(name, date, gender, messages) {
+                document.getElementById("sender-full-name").innerHTML = name;
+                document.getElementById("sender-birth-date").innerHTML = date;
+                document.getElementById("sender-gender").innerHTML = gender;
+                document.getElementById("sender-messages").innerHTML = messages;
+            }
+            </script>
+
+            <div class="form-output">
+                <p>Nama : <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                <p>Pesan : <span id="sender-messages"></span></p>
+
+
+            </div>
+
+        </div>
+    </main>
+<!-- FORMNYA -->
+
+            
+
+            
+</body>
+</html>

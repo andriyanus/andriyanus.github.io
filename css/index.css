@@ -1,0 +1,164 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 1em 2em;
+}
+.banner{
+    text-align: center;
+}
+.nav{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.nav-item{
+    min-width: 80px;
+    text-align: center;
+    padding: 0,2em 0,1em;
+}
+.nav-center{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+section#home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main-form{
+    display: flex;
+}
+.element{
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.label {
+    text-align: center;
+}
+.material-icons{
+    border: 1px solid gray;
+    max-width: 1.2em;
+    border-radius: 50%;
+    text-align: center;
+    background: gray;
+    padding: 0.2em;
+    
+}
+hr{
+align-items:center;
+size: 20px;
+width: 20%;
+
+}
+.circle{
+    border: 1px solid gray;
+    max-width: 1.2em;
+    border-radius: 50%;
+    text-align: center;
+    background: gray;
+    padding: 0.2em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-size: 30px;
+}
+h4{
+    font-size: 18px;
+    color:gray;
+}
+
+/* FORM */
+
+.form{
+    background: lightgray;
+    border-radius: 3%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-left: 30%;
+}
+
+button.btn {
+    margin-top: 5px;
+    padding: 1em;
+    border-radius: 10%;
+    background: cyan;
+    cursor: pointer;
+    
+}
+
+#name{
+    margin-bottom: 20px;
+}
+#email{
+    margin-bottom: 20px;
+}
+#phone{
+    margin-bottom: 20px;
+}
+#message{
+    margin-bottom: 20px;
+}
+label{
+    margin-bottom: 10px;
+}
+
+/* our package */
+
+#our-package{
+    background: lightgray;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+
+.lampu{
+    background-color: grey;
+    border-radius: 50% 50%;
+
+}
+
+.konten{
+    padding-left: 100px;
+}
+
+.end{
+    text-align: center;
+    border-top: 1px solid gray;
+    padding: 1em 2em;
+    border-bottom: 1px solid gray;
+}
+button.btn-call{
+    margin-top: 5px;
+    padding: 1em 3em 1em 3em;
+    border-radius: 5%;
+    background: cyan;
+    cursor: pointer;
+}
+
+.mock{
+    font-size:20px;
+    text-align: center;
+
+}
+.bottom{
+    text-align: center;
+    padding-top: 2em;
+}
+
+.footer{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
