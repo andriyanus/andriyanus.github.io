@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andriyanus Aji</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
@@ -27,10 +28,15 @@
         </section>
         <section class="main-form">
             <div class="element left">
-                <div class="awal">
-                    <img src="images/no pict.jpg" alt="familymart">
+                <div class="container" id="slider-utama">
+                    <div class="slider-wrapper">
+                        <img src="images/buah.png" class="slide" />
+                        <img src="images/melon.jpg" class="slide" />
+                        <img src="images/nanas.jpg" class="slide" />
+                        <img src="images/sayuran.jpg" class="slide" />
+                    </div>
                 </div>
-                <div class="label">"Setiap hari beli sayur buah yang fresh disini</div>
+                <div class="label"><h6>"Setiap hari beli sayur buah yang fresh disini</h6></div>
                 <br>
                 <span class="konten">
                     <i class="material-icons" style="float: left;margin-top: 14px;color: white;margin-right: 14px;">person</i>
@@ -39,57 +45,69 @@
                     <h3>Use this space to provide users with more information <br> about your offer. Consider it a follow-up to your headline <br> and explain the benefits of your services or product.</h3>
                     <div style="width: 100%;">
                         <div class="circle" style="float:left;margin-top: 10px;margin-right: 14px;">1</div>
-                        <p>Your first feature, written in the form of a <br> benefit statement.</p>
+                        <h5>Your first feature, written in the form of a <br> benefit statement.</h5>
                     </div><br />
                     <div style="width: 100%;">
                         <div class="circle" style="float:left;margin-top: 10px;margin-right: 14px;">2</div>
-                        <p>Your second feature, written in the form <br> of a benefit statement.</p>
+                        <h5>Your second feature, written in the form <br> of a benefit statement.</h5>
                     </div><br />
                     <div style="width: 100%;">
                         <div class="circle" style="float:left;margin-top: 10px;margin-right: 14px;">3</div>
-                        <p>Your third feature, written in the form of <br> a benefit statement.</p>
+                        <h5>Your third feature, written in the form of <br> a benefit statement.</h5>
                     </div><br />
-                    <!-- <div style="width: 100%;">
-                        <div class="circle">2</div>
-                    </div><br />
-                    <div style="width: 100%;">
-                        <div class="circle">3</div>
-                    </div><br /> -->
                 </span>
             </div>
             <div class="element right">
                 <div class="form">
                     <h3>Contac Us</h3>
                     <p>Sales akan menghubungi anda 1x24 <br> jam setelah data kami terima.</p>
-                    <form class="message-form" name="message-form" onsubmit="return validateForm()">
-                        Nama: <input id="name" placeholder="Nama" type="text" name="full-name" />
+                    <form  name="message-form" onsubmit="return validateForm()">
+                        Nama: 
+                        <br><input class="form-input" id="name" placeholder="Nama" type="text" name="full-name" />
                         <br />
-                        Email Address: <input id="email" placeholder="Email" type="text" name="email" />
+
+                        Email Address: 
+                        <br><input class="form-input" id="email" placeholder="Email@domain.com" type="text" name="email" />
                         <br />
-                        Phone: <input id="phone" placeholder="Nomor telepon" type="text" name="phone" />
+
+                        Tanggal Lahir:
+                        <input class="form-input" id="date" type="date" name="birth-date" />
                         <br />
-                        Message: <input placeholder="Pesan" type="text" name="messages" />
+
+                        <span id="gender"> 
+                            Jenis Kelamin:
+                            <input type="radio" id="male" name="gender" value="male"/>
+                            <label for="male">Laki-Laki</label>
+                            <input type="radio" id="female" name="gender" value="male"/>
+                            <label for="male">Perempuan</label>
+                        </span>
                         <br />
-                        <input type="submit" value="Submit"/>
+                        <br>
+
+                        Phone: 
+                        <br><input class="form-input" id="phone" placeholder="Nomor telepon" type="text" name="phone" />
+                        <br />
+
+                        Message: 
+                        <br><input class="form-input" placeholder="Pesan" type="text" name="messages" />
+                        <br />
+
+                        <center>
+                            <input class="button-submit" type="submit" value="Submit"/>
+                        </center>
+                        
                     </form>
                      <div class="form-output">
                         <p>Nama : <span id="sender-full-name"></span></p>
-                        <p>Tanggal Lahir : <span id="sender-email"></span></p>
-                        <p>Jenis Kelamin : <span id="sender-phone"></span></p>
+                        <p>Email : <span id="sender-email"></span></p>
+                        <p>Date : <span id="sender-birth-date"></span></p>
+                        <p>Gender : <span id="sender-gender"></span></p>
+                        <p>Phone : <span id="sender-phone"></span></p>
                         <p>Pesan : <span id="sender-messages"></span></p>
         
         
                     </div>
                         
-                    <!-- <label>Your Name:</label>
-                    <input id="name" name="name" class="input" required>
-                    <label>Email Address:</label>
-                    <input id="email" name="email" class="input" required>
-                    <label>Phone Number:</label>
-                    <input id="phone" name="phone" class="input" required>
-                    <label>Message:</label>
-                    <input id="message" name="message" class="input" required>
-                    <button class="btn">SEND</button> -->
                 </div>
                 
             </div>
@@ -155,7 +173,5 @@
         
     </main>
 </body>
-
-<script src="js/index.js"></script>
 
 </html>
